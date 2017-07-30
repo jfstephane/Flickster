@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jfsl.flickster.details"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlvDtls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/toolbarDtls"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="5dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <TextView
+                   android:id="@+id/tvtbdtls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flickster"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:fontFamily="serif"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_below="@id/toolbarDtls"
+        android:id="@+id/imageDtls"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <RatingBar
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageDtls"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ratingDtls"
+        android:numStars="8"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:hint="eeeee"
+        android:layout_below="@id/ratingDtls"
+        android:layout_marginLeft="20dp"
+/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="eeeee"
+        android:layout_below="@id/ratingDtls"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titleDtls"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/overviewDtls"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleDtls"
+        android:hint="rrrrrrrrr"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

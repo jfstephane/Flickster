@@ -24,6 +24,7 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
     public static class ViewHolder{
         TextView title;
         TextView overview;
+        TextView vote;
 
     }
 
@@ -43,6 +44,7 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
             convertView = inflater.inflate(R.layout.item_movie, parent, false);
             viewHolder.title = (TextView) convertView.findViewById(R.id.tvTitle);
             viewHolder.overview = (TextView) convertView.findViewById(R.id.tvOverview);
+            viewHolder.vote = (TextView) convertView.findViewById(R.id.vote);
             convertView.setTag(viewHolder);
         }
         else{
@@ -56,10 +58,12 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
 
         TextView tvTitle = (TextView) convertView.findViewById(R.id.tvTitle);
         TextView tvOverview = (TextView) convertView.findViewById(R.id.tvOverview);
+        TextView vote = (TextView) convertView.findViewById(R.id.vote);
 
         // populate data
         viewHolder.title.setText(movie.getOriginalTitle());
         viewHolder.overview.setText(movie.getOverview());
+        viewHolder.vote.setText(movie.getVoteAverage());
 
 
 
